@@ -55,9 +55,8 @@
                     </div>
                 </div>
                 <div class="col-12" id="interested-in-more-services">
-                    <p>Interested in learning more?</p>
                     <router-link to="/services">
-                        <button type="button" class="btn btn-outline-primary btn-lg">Yes!</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">Interested in Learn More?</button>
                     </router-link>
                 </div>
             </div>

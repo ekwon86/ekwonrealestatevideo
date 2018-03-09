@@ -3,10 +3,12 @@
         <div id="about-background">
             <div class="overlay"></div>
             <div class="container about-banner-container">
-                <h1 class="about-me">About Me</h1>
+                <h1 class="about-me">About</h1>
             </div>
         </div>
-        <div class="container" id="about-info"></div>
+        <div class="container" id="about-info">
+            <h1>Did you know that 73% of sellers are likely to list an agent utilizing video? Only 1% of agents offer video utilizing video as a marketing tool. Let me help you seize the opportunity!</h1>
+        </div>
     </div>
 </template>
 

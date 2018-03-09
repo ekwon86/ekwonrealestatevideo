@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="container" id="contact-info">
-            <h1>Contact</h1>
+            <p>Have any questions, comments, or requests? Feel free to contact me via </p>
         </div>
     </div>
 </template>
