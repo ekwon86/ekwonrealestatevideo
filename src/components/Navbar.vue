@@ -31,6 +31,9 @@
             goHome() {
                 this.$router.push('/');
             },
+            scrollToTop() {
+                alert('test');
+            },
             checkScroll() {
                 const navbar = document.getElementById('top-navbar');
                 const windowHeight = Math.max(document.documentElement.clientHeight);
@@ -62,9 +65,6 @@
     }
     .banner-container {
         padding-left: 0;
-    }
-    .nav-link-container {
-        padding-right: 0;
     }
     .nav-links {
         margin-left: 30px;
@@ -110,7 +110,7 @@
         top: 0;
         z-index: 99999;
         left: 0;
-        transition: 1s;
+        transition: 0.5s;
     }
     .vertical-center-content {
         position: relative;
