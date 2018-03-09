@@ -28,7 +28,7 @@
                             <h2 class="services-headings">Video</h2>
                         </div>
                         <div class="services-desc-subcontainers">
-                            <span>I offer the latest in 4K and HD video production using top of the line cameras and equipment to produce visually stunning marketing and promotional videos. </span>
+                            <span>I offer the latest in 4K and HD video production to produce visually stunning marketing and promotional videos. </span>
                         </div>
                     </div>
                 </div>
@@ -50,11 +50,16 @@
                             <h2 class="services-headings">Photo</h2>
                         </div>
                         <div class="services-desc-subcontainers">
-                            <span>I </span>
+                            <span>Target more clients with attention-grabbing, professional photos of your property. </span>
                         </div>
                     </div>
                 </div>
-
+                <div class="col-12" id="interested-in-more-services">
+                    <p>Interested in learning more?</p>
+                    <router-link to="/services">
+                        <button type="button" class="btn btn-outline-primary btn-lg">Yes!</button>
+                    </router-link>
+                </div>
             </div>
         </div>
 
@@ -144,6 +149,7 @@ export default {
 }
 
 .services-containers {
+    padding-right: 0;
 }
 .box-shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -163,5 +169,12 @@ export default {
     text-align: center;
     min-height: 250px;
     height: auto;
+}
+#interested-in-more-services {
+    text-align: center;
+    margin-top: 25px;
+}
+#interested-in-more-services p {
+    font-size: 1rem;
 }
 </style>

@@ -1,9 +1,12 @@
 <template>
     <div id="about">
-        <div id="about-background"></div>
-        <div class="container" id="about-info">
-            <h1>About</h1>
+        <div id="about-background">
+            <div class="overlay"></div>
+            <div class="container about-banner-container">
+                <h1 class="about-me">About Me</h1>
+            </div>
         </div>
+        <div class="container" id="about-info"></div>
     </div>
 </template>
 
@@ -11,6 +14,25 @@
 <script></script>
 
 <style scoped>
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .about-me {
+        font-size: 7rem;
+        color: white;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .about-banner-container {
+        position: relative;
+        top: 50%;
+        text-align: right;
+        transform:translate(0,-50%);
+    }
     #about-background {
         height: 700px;
         width: 100%;
