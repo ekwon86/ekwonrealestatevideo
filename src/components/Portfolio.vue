@@ -7,13 +7,24 @@
             </div>
         </div>
         <div class="container" id="portfolio-info">
-            <h1>Portfolio</h1>
+            <p class="projects-banner">PROJECTS</h1>
+            <div class="project-containers"></div>
         </div>
     </div>
 </template>
 
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      projects: [
+        { title: 'Project 1', imgPath: '../assets/pic1.jpg' }
+      ]
+    }
+  }
+}
+</script>
 
 <style scoped>
     .overlay {
@@ -28,6 +39,11 @@
         text-transform: uppercase;
         padding-bottom: 15px;
         font-family: 'Oswald', sans-serif;
+    }
+    .projects-banner {
+        font-family: 'Oswald', sans-serif;
+        font-size: 4em;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
     }
     .portfolio-banner-container {
         position: relative;
@@ -47,7 +63,8 @@
         background-size: cover;
     }
     #portfolio-info {
-        height: 100vh;
+        height: auto;
+        min-height: 50vh;
         padding-top: 50px;
         padding-bottom: 50px;
     }

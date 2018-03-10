@@ -7,6 +7,8 @@ import About from './components/About.vue';
 import Portfolio from './components/Portfolio.vue';
 import Contact from './components/Contact.vue';
 
+import Project1 from './components/projects/Project1.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -14,7 +16,8 @@ const routes = [
   { path: '/about', component: About },
   { path: '/portfolio', component: Portfolio },
   { path: '/services', component: Services },
-  { path: '/contact', component: Contact }
+  { path: '/contact', component: Contact },
+  { path: '/project1', component: Project1 }
 ];
 
 const router = new VueRouter({
