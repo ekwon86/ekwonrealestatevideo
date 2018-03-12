@@ -11,12 +11,12 @@
             <!-- INTRO STATEMENT -->
             <div class="row">
                 <div class="col-6 text-right">
-                    <h1 class="let-me-help">Let me help showcase your listing with beautiful, professional videos & photos</h1>
+                    <h1 class="let-me-help">Let me help showcase your listing with beautiful, professional videos</h1>
                 </div>
                 <div class="col-6 intro-text-container">
+                    <p>Did you know that 73% of sellers are likely to list an agent utilizing video? Only 1% of agents offer video utilizing video as a marketing tool. Let me help you seize the opportunity!</p>
                     <p>Set yourself apart from the competition with a <strong>professional real estate marketing video</strong> to boldly showcase your property, highlight building features and surrounding local amenities.</p>
-                    <p>Our custom real estate videos provide your target audience with a rich and engaging experience that is sure to leave an impression. The final production consists of full motion video that is outputted both on DVD and as a web-ready video that can be embedded on any website, sent via email, or shared on social media. </p>
-                    <p>At inMotion, we produce fully custom HD (high definition) videos using commercial drones, helicopters and professional lighting and sound equipment for a wide range of real estate marketing projects.</p>
+                    <p>Our custom real estate videos provide your target audience with a rich and engaging experience that is sure to leave an impression. The final production consists of full motion video that is outputted as web-ready video that can be embedded on any website, sent via email, or shared on social media. </p>
                 </div>
             </div>
             <!-- TYPES OF SERVICES -->
@@ -50,7 +50,7 @@
                             <h2 class="services-headings">Photo</h2>
                         </div>
                         <div class="services-desc-subcontainers">
-                            <span>Target more clients with attention-grabbing, professional photos of your property. </span>
+                            <span>I don't only specialize in videography, but photography as well! Target more clients with attention-grabbing, professional photos of your property. </span>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ export default {
 .services-desc-subcontainers {
     padding: 25px;
     text-align: center;
-    min-height: 250px;
+    min-height: 225px;
     height: auto;
 }
 #interested-in-more-services {

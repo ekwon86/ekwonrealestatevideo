@@ -8,7 +8,8 @@
         </div>
         <div class="container" id="portfolio-info">
             <p class="projects-banner">PROJECTS</h1>
-            <div class="project-containers"></div>
+            <div v-for="project in projects" class="project-containers" :style="{ backgroundImage: 'url(\'' + project.imgPath + '\')' }">
+            </div>
         </div>
     </div>
 </template>
@@ -19,7 +20,9 @@ export default {
   data() {
     return {
       projects: [
-        { title: 'Project 1', imgPath: '../assets/pic1.jpg' }
+        { title: 'Project 1', imgPath: '../assets/pic1.jpg' },
+        { title: 'Project 2', imgPath: '../assets/pic2.jpg' },
+        { title: 'Project 3', imgPath: '../assets/pic3.jpg' }
       ]
     }
   }
@@ -67,5 +70,17 @@ export default {
         min-height: 50vh;
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .project-containers {
+      height: 300px;
+      position: relative;
+      margin: 40px 0;
+      /*background-image: url('../assets/pic1.jpg');*/
+      background-size: cover;
+      background-position: center;
+    }
+    .project-containers-overlay {
+      height: 100%;
+      width: 100%;
     }
 </style>

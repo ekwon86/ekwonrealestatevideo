@@ -7,7 +7,6 @@
             </div>
         </div>
         <div class="container" id="services-info">
-            <h1>Services</h1>
         </div>
     </div>
 </template>
