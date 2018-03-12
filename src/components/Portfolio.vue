@@ -8,15 +8,15 @@
         </div>
         <div class="container" id="portfolio-info">
             <div v-for="(project, index) in projects" class="project-containers" :style="{ 'background-image': 'url(/img/' + project.imgPath + '.jpg)' }" @mouseover="showProjectInfo(index)" @mouseleave="hideProjectInfo(index)">
-                <transition name="slide-fade">
                     <router-link :to="'/' + project.url">
-                        <div class="project-containers-overlay" v-if="project.show">
-                            <div class="project-title-container">
-                                <h1>{{ project.title }}</h1>
+                        <transition name="slide-fade">
+                            <div class="project-containers-overlay" v-if="project.show">
+                                <div class="project-title-container">
+                                    <h1>{{ project.title }}</h1>
+                                </div>
                             </div>
-                        </div>
+                        </transition>
                     </router-link>
-                </transition>
             </div>
         </div>
     </div>
