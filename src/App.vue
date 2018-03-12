@@ -95,7 +95,7 @@ export default {
     }
     .carousel-item img {
         width: auto;
-        max-height: 700px;
+        max-height: 600px;
         overflow: hidden;
     }
     .project-main-background-dark-overlay {
@@ -172,14 +172,24 @@ export default {
         padding-right:0;
     }
     .project-address,.project-city {
-        color: #ff9132;
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
         font-size: 3rem;
         letter-spacing: 6px;
-        border-left: 6px solid #ff9132;
         padding-left: 25px;
         margin: 0;
+    }
+    .project-1-address, .project-1-city {
+        color: #ff9132;
+        border-left: 6px solid #ff9132;
+    }
+    .project-2-address, .project-2-city {
+        color: #36beeb;
+        border-left: 6px solid #36beeb;
+    }
+    .project-3-address, .project-3-city {
+        color: #eb2e5c;
+        border-left: 6px solid #eb2e5c;
     }
     .project-city {
         padding-bottom: 10px;

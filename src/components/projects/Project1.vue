@@ -19,8 +19,8 @@
             </div>
             <div class="row">
                 <div class="col-6 project-info-left-container">
-                    <p class="project-address">127 Pointe Drive</p>
-                    <p class="project-city">Brea</p>
+                    <p class="project-address project-1-address">127 Pointe Drive</p>
+                    <p class="project-city project-1-address">Brea</p>
                     <p class="project-date">03  /  12  /  2018</p>
                 </div>
                 <div class="col-6 project-info-right-container">
