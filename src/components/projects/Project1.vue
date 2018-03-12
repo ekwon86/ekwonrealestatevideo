@@ -7,10 +7,24 @@
         <div class="project-description-container container">
             <div class="row">
                 <div class="col-12 text-right return-to-portfolio-container">
-                    <span class="return-to-portfolio"><i class="fas fa-arrow-left goback-icon"></i>Return to Portfolio</span>
+                    <router-link to="/portfolio">
+                        <span class="return-to-portfolio"><i class="fas fa-arrow-left goback-icon"></i>Return to Portfolio</span>
+                    </router-link>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-12 project-description-subcontainer">
                     <Carousel :projectInfo="projectInfo"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 project-info-left-container">
+                    <p class="project-address">127 Pointe Drive</p>
+                    <p class="project-city">Brea</p>
+                    <p class="project-date">03  /  12  /  2018</p>
+                </div>
+                <div class="col-6 project-info-right-container">
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis neque vitae sodales tempor. Suspendisse accumsan ex sed laoreet condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi consectetur fermentum ante elementum vehicula. Quisque quam quam, consequat at fermentum a, mollis malesuada orci. Pellentesque ligula est, rhoncus et viverra in, blandit eget turpis. Aliquam erat volutpat. Quisque eget nibh at felis placerat tristique. Vestibulum quis lobortis mi, quis vehicula sem.</p>
                 </div>
             </div>
         </div>

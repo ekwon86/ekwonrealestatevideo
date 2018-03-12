@@ -77,10 +77,10 @@ export default {
 
     /*PORTFOLIO PROJECT PAGES*/
     .portfolio-project-page {
-        height:100vh;
+        height: auto;
+        min-height: 100vh;
         position: relative;
-
-        padding: 0;
+        padding-bottom: 150px;
     }
 
     .portfolio-project-content {
@@ -95,7 +95,7 @@ export default {
     }
     .carousel-item img {
         width: auto;
-        max-height: 600px;
+        max-height: 700px;
         overflow: hidden;
     }
     .project-main-background-dark-overlay {
@@ -104,7 +104,7 @@ export default {
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.8);
         z-index: 100;
     }
     .project-main-background-overlay {
@@ -159,5 +159,41 @@ export default {
         padding: 0;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         background-color: #fff;
+    }
+    .project-info-left-container, .project-info-right-container {
+        margin-top: 25px;
+    }
+    .project-info-left-container {
+        padding-left: 0;
+        padding-right: 15px;
+        text-align: left;
+    }
+    .project-info-right-container {
+        padding-right:0;
+    }
+    .project-address,.project-city {
+        color: #ff9132;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+        letter-spacing: 6px;
+        border-left: 6px solid #ff9132;
+        padding-left: 25px;
+        margin: 0;
+    }
+    .project-city {
+        padding-bottom: 10px;
+        /*border-top: 5px solid #ff9132;*/
+        margin-bottom: 25px;
+    }
+    .project-description {
+        color: white;
+        text-align: justify;
+    }
+    .project-date {
+        color: white;
+        letter-spacing: 10px;
+        font-size: 1rem;
+        font-family: 'Oswald', sans-serif;
     }
 </style>
