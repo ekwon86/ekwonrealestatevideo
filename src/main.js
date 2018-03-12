@@ -7,7 +7,11 @@ import About from './components/About.vue';
 import Portfolio from './components/Portfolio.vue';
 import Contact from './components/Contact.vue';
 
+/** Portfolio Project Routes **/
 import Project1 from './components/projects/Project1.vue';
+import Project2 from './components/projects/Project2.vue';
+import Project3 from './components/projects/Project3.vue';
+
 
 Vue.use(VueRouter);
 
@@ -17,7 +21,9 @@ const routes = [
   { path: '/portfolio', component: Portfolio },
   { path: '/services', component: Services },
   { path: '/contact', component: Contact },
-  { path: '/project1', component: Project1 }
+  { path: '/project1', component: Project1 },
+  { path: '/project2', component: Project2 },
+  { path: '/project3', component: Project3 }
 ];
 
 const router = new VueRouter({

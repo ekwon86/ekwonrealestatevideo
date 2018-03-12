@@ -1,19 +1,21 @@
 <template>
     <div id="portfolio">
-        <div id="portfolio-background">
+        <div id="portfolio-background" class="page-landing-backgrounds">
             <div class="overlay"></div>
-            <div class="container portfolio-banner-container">
-                <h1 class="portfolio-banner">My Work</h1>
+            <div class="container page-banner-containers">
+                <h1 class="page-banners">My Work</h1>
             </div>
         </div>
         <div class="container" id="portfolio-info">
             <div v-for="(project, index) in projects" class="project-containers" :style="{ 'background-image': 'url(/img/' + project.imgPath + '.jpg)' }" @mouseover="showProjectInfo(index)" @mouseleave="hideProjectInfo(index)">
                 <transition name="slide-fade">
-                    <div class="project-containers-overlay" v-if="project.show">
-                        <div class="project-title-container">
-                            <h1>{{ project.title }}</h1>
+                    <router-link :to="'/' + project.url">
+                        <div class="project-containers-overlay" v-if="project.show">
+                            <div class="project-title-container">
+                                <h1>{{ project.title }}</h1>
+                            </div>
                         </div>
-                    </div>
+                    </router-link>
                 </transition>
             </div>
         </div>
@@ -26,9 +28,24 @@ export default {
     data() {
       return {
         projects: [
-          { title: '127 Pointe Drive', imgPath: 'pic1.551db4dc', show: false },
-          { title: '1415 Mesa Verde', imgPath: 'pic2.4caa3c41', show: false },
-          { title: '6247 San Ricardo', imgPath: 'pic3.3fc47fdd', show: false }
+          {
+              title: '127 Pointe Drive',
+              imgPath: 'pic1.551db4dc',
+              url: 'project1',
+              show: false
+          },
+          {
+              title: '1415 Mesa Verde',
+              imgPath: 'pic2.4caa3c41',
+              url: 'project2',
+              show: false
+          },
+          {
+              title: '6247 San Ricardo',
+              imgPath: 'pic3.3fc47fdd',
+              url: 'project3',
+              show: false
+          }
         ]
       }
     },
@@ -44,35 +61,8 @@ export default {
 </script>
 
 <style scoped>
-    .overlay {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: rgba(0,0,0,0.5);
-    }
-    .portfolio-banner {
-        font-size: 7rem;
-        color: white;
-        text-transform: uppercase;
-        padding-bottom: 15px;
-        font-family: 'Oswald', sans-serif;
-    }
-    .portfolio-banner-container {
-        position: relative;
-        top: 50%;
-        text-align: right;
-        transform:translate(0,-50%);
-    }
     #portfolio-background {
-        height: 600px;
-        width: 100%;
-        position: relative;
-        border: transparent;
         background: url("../assets/pic4.jpg");
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     #portfolio-info {
         height: auto;

@@ -1,5 +1,7 @@
 <template>
+    <div class="portfolio-project-page">
 
+    </div>
 </template>
 
 <script>

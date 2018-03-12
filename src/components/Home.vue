@@ -1,8 +1,8 @@
 <template>
     <div id="home">
-        <div id="landing-background">
+        <div id="landing-background" class="page-landing-backgrounds">
             <div class="overlay"></div>
-            <div class="container home-banner-container">
+            <div class="container page-banner-containers">
                 <h1 class="the-future">The <span class="future">Future</span></h1>
                 <h1 class="of-real-estate-marketing">of Real Estate Marketing</h1>
             </div>
@@ -76,104 +76,84 @@ export default {
 </script>
 
 <style scoped>
-.overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0,0.6);
-}
-.home-banner-container {
-    position: relative;
-    top: 50%;
-    text-align: right;
-    transform:translate(0,-50%);
-}
-.the-future {
-    font-size: 7rem;
-    color: white;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
-    padding-bottom: 15px;
-    font-family: 'Oswald', sans-serif;
-}
+    .the-future {
+        font-size: 7rem;
+        color: white;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        padding-bottom: 15px;
+        font-family: 'Oswald', sans-serif;
+    }
 
-.intro-text-container {
-    text-align: justify;
-}
+    .intro-text-container {
+        text-align: justify;
+    }
 
-.services-headings {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: white;
-}
+    .services-headings {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: white;
+    }
 
-.of-real-estate-marketing {
-    font-size: 5rem;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-}
-.future {
-    color: #38d0ff;
-}
-#landing-background {
-    height: 600px;
-    width: 100%;
-    position: relative;
-    border: transparent;
-    background: url("../assets/pic1.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    .of-real-estate-marketing {
+        font-size: 5rem;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+    .future {
+        color: #38d0ff;
+    }
+    #landing-background {
+        background: url("../assets/pic1.jpg");
+    }
 
-#landing-info {
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+    #landing-info {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
-.let-me-help {
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-}
+    .let-me-help {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 3rem;
+    }
 
-#services-section {
-    height: auto;
-    margin: 100px 0 80px 0;
-}
+    #services-section {
+        height: auto;
+        margin: 100px 0 80px 0;
+    }
 
-.services-containers {
-    padding-right: 0;
-}
-.box-shadow {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.services-icons {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
-}
-.services-subcontainers {
-    padding: 25px;
-    background-color: #007bff;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-.services-desc-subcontainers {
-    padding: 25px;
-    text-align: center;
-    min-height: 225px;
-    height: auto;
-}
-#interested-in-more-services {
-    text-align: center;
-    margin-top: 25px;
-}
-#interested-in-more-services p {
-    font-size: 1rem;
-}
+    .services-containers {
+        padding-right: 0;
+    }
+    .box-shadow {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .services-icons {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+    .services-subcontainers {
+        padding: 25px;
+        background-color: #007bff;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .services-desc-subcontainers {
+        padding: 25px;
+        text-align: center;
+        min-height: 225px;
+        height: auto;
+    }
+    #interested-in-more-services {
+        text-align: center;
+        margin-top: 25px;
+    }
+    #interested-in-more-services p {
+        font-size: 1rem;
+    }
 </style>
