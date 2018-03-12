@@ -7,8 +7,14 @@
             </div>
         </div>
         <div class="container" id="portfolio-info">
-            <p class="projects-banner">PROJECTS</h1>
-            <div v-for="project in projects" class="project-containers" :style="{ backgroundImage: 'url(\'' + project.imgPath + '\')' }">
+            <div v-for="(project, index) in projects" class="project-containers" :style="{ 'background-image': 'url(/img/' + project.imgPath + '.jpg)' }" @mouseover="showProjectInfo(index)" @mouseleave="hideProjectInfo(index)">
+                <transition name="slide-fade">
+                    <div class="project-containers-overlay" v-if="project.show">
+                        <div class="project-title-container">
+                            <h1>{{ project.title }}</h1>
+                        </div>
+                    </div>
+                </transition>
             </div>
         </div>
     </div>
@@ -17,15 +23,23 @@
 
 <script>
 export default {
-  data() {
-    return {
-      projects: [
-        { title: 'Project 1', imgPath: '../assets/pic1.jpg' },
-        { title: 'Project 2', imgPath: '../assets/pic2.jpg' },
-        { title: 'Project 3', imgPath: '../assets/pic3.jpg' }
-      ]
+    data() {
+      return {
+        projects: [
+          { title: '127 Pointe Drive', imgPath: 'pic1.551db4dc', show: false },
+          { title: '1415 Mesa Verde', imgPath: 'pic2.4caa3c41', show: false },
+          { title: '6247 San Ricardo', imgPath: 'pic3.3fc47fdd', show: false }
+        ]
+      }
+    },
+    methods: {
+        showProjectInfo(index) {
+            this.projects[index].show = true;
+        },
+        hideProjectInfo(index) {
+            this.projects[index].show = false;
+        }
     }
-  }
 }
 </script>
 
@@ -43,11 +57,6 @@ export default {
         padding-bottom: 15px;
         font-family: 'Oswald', sans-serif;
     }
-    .projects-banner {
-        font-family: 'Oswald', sans-serif;
-        font-size: 4em;
-        border-bottom: 1px solid rgba(0,0,0,0.3);
-    }
     .portfolio-banner-container {
         position: relative;
         top: 50%;
@@ -55,7 +64,7 @@ export default {
         transform:translate(0,-50%);
     }
     #portfolio-background {
-        height: 700px;
+        height: 600px;
         width: 100%;
         position: relative;
         border: transparent;
@@ -72,15 +81,35 @@ export default {
         padding-bottom: 50px;
     }
     .project-containers {
-      height: 300px;
-      position: relative;
-      margin: 40px 0;
-      /*background-image: url('../assets/pic1.jpg');*/
-      background-size: cover;
-      background-position: center;
+        height: 300px;
+        position: relative;
+        margin: 40px 0;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .project-containers:hover {
+        cursor: pointer;
     }
     .project-containers-overlay {
-      height: 100%;
-      width: 100%;
+        height: 125%;
+        width: 100%;
+        position: absolute;
+        top: -10%;
+        left: 0;
+        background-color: rgba(0,0,0,0.6);
+        text-align: center;
+    }
+    .project-title-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .project-title-container h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 6em;
+        color: white;
+        text-transform: uppercase;
     }
 </style>

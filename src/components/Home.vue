@@ -119,7 +119,7 @@ export default {
     color: #38d0ff;
 }
 #landing-background {
-    height: 700px;
+    height: 600px;
     width: 100%;
     position: relative;
     border: transparent;

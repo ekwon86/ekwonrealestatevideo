@@ -36,7 +36,7 @@
         transform:translate(0,-50%);
     }
     #about-background {
-        height: 700px;
+        height: 600px;
         width: 100%;
         position: relative;
         border: transparent;
