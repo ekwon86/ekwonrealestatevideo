@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-3 navbar-subcontainers banner-container">
                     <div class="vertical-center-content">
-                        <p class="banner-text ek-banner">EUGENE KWON</p>
+                        <p class="banner-text ek-banner">EK PRODUCTIONS</p>
                         <p class="banner-text bottom-banner">REAL ESTATE VIDEOGRAPHY & PHOTOGRAPHY</p>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
     .ek-banner {
         font-size: 30px;
         font-weight: bold;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         border-bottom: 1px solid rgba(255,255,255,0.4);
     }
     .bottom-banner {

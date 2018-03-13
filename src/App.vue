@@ -56,10 +56,10 @@ export default {
         height: 600px;
         width: 100%;
         position: relative;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-attachment: fixed !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
     .page-banner-containers {
         position: relative;
@@ -114,10 +114,10 @@ export default {
         overflow: hidden;
         height: 100%;
         width: 100%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-attachment: fixed !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
         -webkit-filter: blur(5px);
         -moz-filter: blur(5px);a
         -o-filter: blur(5px);
