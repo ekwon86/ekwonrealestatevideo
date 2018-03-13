@@ -3,7 +3,7 @@
         <div id="about-background" class="page-landing-backgrounds">
             <div class="overlay"></div>
             <div class="container page-banner-containers">
-                <h1 class="page-banners">ABOUT</h1>
+                <h1 class="page-banners">ABOUT US</h1>
             </div>
         </div>
         <div class="container" id="about-info">

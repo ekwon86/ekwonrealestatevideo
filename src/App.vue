@@ -206,4 +206,23 @@ export default {
         font-size: 1rem;
         font-family: 'Oswald', sans-serif;
     }
+
+    /* CUSTOMER BUTTON */
+    .custom-button {
+        border: transparent;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 20px 35px;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+        transition: 0.2s;
+        text-decoration: none !important;
+    }
+    .custom-button:hover {
+        background-color: #2e2e2e;
+    }
+    a:link, a:visited {
+        text-decoration: none !important;
+    }
 </style>
