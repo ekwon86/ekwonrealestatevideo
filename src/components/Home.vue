@@ -2,14 +2,18 @@
     <div id="home">
         <div id="landing-background" class="page-landing-backgrounds">
             <div class="overlay"></div>
-            <div class="container page-banner-containers">
-                <h1 class="the-future">The <span class="future">Future</span></h1>
-                <h1 class="of-real-estate-marketing">of Real Estate Marketing</h1>
-            </div>
+                <div class="container page-banner-containers" id="home-banner" >
+                    <transition name="main-banner">
+                        <div v-if="showHomeBanner">
+                            <h1 class="the-future" >The <span class="future">Future</span></h1>
+                            <h1 class="of-real-estate-marketing">of Real Estate Marketing</h1>
+                        </div>
+                    </transition>
+                </div>
         </div>
         <div id="landing-info">
             <!-- INTRO STATEMENT -->
-            <div class="container">
+            <div class="container" id="welcome-msg-container">
                 <div class="row">
                     <div class="col-6 text-right">
                         <h1 class="let-me-help">Let me help showcase your listing with beautiful, professional videos</h1>
@@ -23,8 +27,13 @@
             </div>
             <!-- TYPES OF SERVICES -->
             <div id="home-services">
-                <div class="container">
+                <div class="container home-services-subcontainer">
                     <Homeservices/>
+                </div>
+            </div>
+            <div id="home-portfolio">
+                <div class="container">
+                    <Homeportfolio/>
                 </div>
             </div>
         </div>
@@ -34,9 +43,28 @@
 
 <script>
 import Homeservices from './subcomponents/Homeservices.vue';
+import Homeportfolio from './subcomponents/Homeportfolio.vue';
+
 export default {
+    data() {
+        return {
+            showHomeBanner: false
+        }
+    },
+    methods: {
+        animateHomeBanner() {
+            let self = this;
+            setTimeout(function() {
+                self.showHomeBanner = true;
+            }, 1000);
+        }
+    },
     components: {
         Homeservices,
+        Homeportfolio
+    },
+    mounted() {
+        this.animateHomeBanner();
     }
 }
 </script>
@@ -72,9 +100,6 @@ export default {
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
     }
-    .future {
-        color: #ff8c38;
-    }
     #landing-background {
         background: url("../assets/pic1.jpg");
     }
@@ -90,7 +115,24 @@ export default {
     }
 
     #home-services {
+        margin-top: 100px;
         background-color: white;
+        height: 700px;
+    }
+    .home-services-subcontainer {
+        height: 100%;
+    }
+
+    .main-banner-enter-active {
+        transition: all .3s ease;
+    }
+    .main-banner-leave-active {
+        transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .main-banner-enter, .main-banner-leave-to
+        /* .slide-fade-leave-active below version 2.1.8 */ {
+        transform: translateX(-25px);
+        opacity: 0;
     }
 
 </style>

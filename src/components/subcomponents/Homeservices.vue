@@ -88,7 +88,8 @@
     }
     #interested-in-more-services {
         text-align: center;
-        margin-top: 25px;
+        margin-top: 50px;
+        height: auto;
     }
     #interested-in-more-services p {
         font-size: 1rem;
