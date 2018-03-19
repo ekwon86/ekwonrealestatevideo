@@ -11,6 +11,7 @@ import Contact from './components/Contact.vue';
 import Project1 from './components/projects/Project1.vue';
 import Project2 from './components/projects/Project2.vue';
 import Project3 from './components/projects/Project3.vue';
+import Project4 from './components/projects/Project4.vue';
 
 
 Vue.use(VueRouter);

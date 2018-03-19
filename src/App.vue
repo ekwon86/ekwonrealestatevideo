@@ -219,22 +219,21 @@ export default {
         font-family: 'Oswald', sans-serif;
     }
 
-    /* CUSTOMER BUTTON */
     .custom-button {
-        border: transparent;
+        border: 3px solid black;
+        display: inline-block;
+        color: black;
+        background-color: transparent;
+        width: 250px;
+        padding: 15px 0;
         text-transform: uppercase;
-        letter-spacing: 3px;
-        padding: 20px 35px;
-        font-size: 1rem;
-        background-color: black;
-        color: white;
+        letter-spacing: 2px;
         transition: 0.2s;
-        text-decoration: none !important;
     }
+
     .custom-button:hover {
         background-color: #2e2e2e;
+        color: white;
     }
-    a:link, a:visited {
-        text-decoration: none !important;
-    }
+
 </style>

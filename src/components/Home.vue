@@ -36,6 +36,11 @@
                     <Homeportfolio/>
                 </div>
             </div>
+            <div id="home-rdy-to-talk">
+                <div class="container">
+                    <Homereadytotalk/>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -43,7 +48,8 @@
 
 <script>
 import Homeservices from './subcomponents/Homeservices.vue';
-import Homeportfolio from './subcomponents/Homeportfolio.vue';
+import Homeportfolio from './subcomponents/Homeportfolio.vue'
+import Homereadytotalk from './subcomponents/Homereadytotalk.vue';
 
 export default {
     data() {
@@ -61,7 +67,8 @@ export default {
     },
     components: {
         Homeservices,
-        Homeportfolio
+        Homeportfolio,
+        Homereadytotalk
     },
     mounted() {
         this.animateHomeBanner();
@@ -83,16 +90,7 @@ export default {
         text-align: justify;
     }
 
-    .services-headings {
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-size: 2rem;
-        font-weight: bold;
-        border-bottom: 1px solid rgba(0,0,0,0.3);
-        padding-bottom: 10px;
-        letter-spacing: 1px;
-        color: black;
-    }
+
 
     .of-real-estate-marketing {
         font-size: 5rem;
@@ -106,7 +104,6 @@ export default {
     #landing-info {
         height: auto;
         padding-top: 100px;
-        padding-bottom: 100px;
     }
     .let-me-help {
         font-family: 'Oswald', sans-serif;
@@ -116,8 +113,29 @@ export default {
 
     #home-services {
         margin-top: 100px;
-        background-color: white;
-        height: 700px;
+        height: auto;
+        background: url("../assets/servicesbg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+    }
+
+    #home-rdy-to-talk {
+        margin-top: 100px;
+        height: auto;
+        background: url("../assets/rdytotalk.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+    }
+
+    #home-portfolio {
+        height: auto;
+        margin-top: 100px;
     }
     .home-services-subcontainer {
         height: 100%;

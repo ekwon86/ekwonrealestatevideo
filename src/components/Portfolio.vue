@@ -45,6 +45,12 @@ export default {
               imgPath: 'pic3.3fc47fdd',
               url: 'project3',
               show: false
+          },
+          {
+              title: '3547 S. Copperwood Avenue',
+              imgPath: 'pic4.9cdd2694',
+              url: 'project4',
+              show: false
           }
         ]
       }
@@ -98,7 +104,7 @@ export default {
     }
     .project-title-container h1 {
         font-family: 'Oswald', sans-serif;
-        font-size: 6em;
+        font-size: 5em;
         color: white;
         text-transform: uppercase;
     }

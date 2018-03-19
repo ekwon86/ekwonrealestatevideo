@@ -31,24 +31,15 @@
                 <img src="../../assets/dslr.png" class="services-icons" alt="photo">
             </div>
             <div class="services-desc-subcontainers">
-                <h2 class="services-headings">Photography Stills</h2>
+                <h2 class="services-headings">Photographic Stills</h2>
                 <span>Captivate your prospective buyers with stunning, shareable, still photography. We will turn any property into a striking work of art and keep your prospects coming back for more. </span>
             </div>
         </div>
-        <!--<div class="col-6 text-center  services-containers">-->
-        <!--<div>-->
-        <!--<div class="services-subcontainers photo-container">-->
-        <!--<img src="../assets/computer.png" class="services-icons" alt="photo">-->
-        <!--</div>-->
-        <!--<div class="services-desc-subcontainers">-->
-        <!--<h2 class="services-headings">Custom Listing Website</h2>-->
-        <!--<span>Sometimes you need more than just ads. Let your listing shine with a completely custom approach. All of our custom listing sites are professionally designed and allow you to blow away your target audience with photo galleries, videos, and more.</span>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
         <div class="col-12" id="interested-in-more-services">
             <router-link to="/services">
-                <span class="custom-button" style="">Learn More</span>
+                <div class="custom-button" style="">
+                    <span>Learn More</span>
+                </div>
             </router-link>
         </div>
     </div>
@@ -61,6 +52,15 @@
     #services-section {
         height: auto;
         margin: 100px 0 80px 0;
+    }
+
+    .services-headings {
+        /*text-transform: uppercase;*/
+        font-size: 1.75rem;
+        font-weight: bold;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+        color: black;
     }
 
     .services-icons {

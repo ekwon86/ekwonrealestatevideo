@@ -1,16 +1,46 @@
 <template>
-    <div class="row">
-        <div class="col-12 text-center what-i-do-container">
-            <h1 class="what-i-do">What We Do</h1>
-            <p>We help real estate agents sell properties with less hassle, in less time, and for higher prices by offering the following services:</p>
+    <div>
+        <div class="row">
+            <div class="col-12 text-center what-i-do-container">
+                <h1 class="what-i-do">OUR WORK</h1>
+                <p>Here are some projects we have worked on recently</p>
+            </div>
         </div>
-      
-        <div class="col-12" id="interested-in-more-services">
-            <router-link to="/services">
-                <span class="custom-button" style="">Learn More</span>
-            </router-link>
+        <div class="row landing-portfolio-video-containers">
+            <div class="col-6 landing-video-containers">
+                <div class="landing-video">
+                    <iframe src="https://www.youtube.com/embed/0Pg_1A-iVWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-6 landing-video-containers">
+                <div class="landing-video">
+                    <iframe src="https://www.youtube.com/embed/0PQj7-i4PGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row landing-portfolio-video-containers">
+            <div class="col-6 landing-video-containers">
+                <div class="landing-video">
+                    <iframe src="https://www.youtube.com/embed/HrjfZEhJaQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-6 landing-video-containers">
+                <div class="landing-video">
+                    <iframe src="https://www.youtube.com/embed/OmmwpactVLc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="interested-in-more-services">
+                <router-link to="/portfolio">
+                    <div class="custom-button" style="">
+                        <span>View Portfolio</span>
+                    </div>
+                </router-link>
+            </div>
         </div>
     </div>
+
 </template>
 
 
@@ -37,7 +67,6 @@
         display: inline-block;
         border-radius: 999em;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        background-color: #007bff;
     }
     .services-desc-subcontainers {
         padding: 25px;
@@ -47,7 +76,7 @@
     }
     #interested-in-more-services {
         text-align: center;
-        margin-top: 50px;
+        margin-top: 25px;
         height: auto;
     }
     #interested-in-more-services p {
@@ -62,5 +91,21 @@
         font-weight: bold;
         margin-bottom: 25px;
         font-size: 4rem;
+    }
+    .landing-portfolio-video-containers {
+        height: 300px;
+    }
+    .landing-video-containers {
+        height: 100%;
+        padding: 15px;
+    }
+    .landing-video {
+        height: 100%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .landing-video iframe {
+        width: 100%;
+        height: 100%;
     }
 </style>
