@@ -62,7 +62,7 @@ export default {
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.6);
     }
     .page-landing-backgrounds {
         height: 600px;

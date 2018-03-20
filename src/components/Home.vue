@@ -62,7 +62,7 @@ export default {
             let self = this;
             setTimeout(function() {
                 self.showHomeBanner = true;
-            }, 1000);
+            }, 250);
         }
     },
     components: {
