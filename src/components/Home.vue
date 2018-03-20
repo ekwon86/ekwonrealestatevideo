@@ -16,11 +16,11 @@
             <div class="container" id="welcome-msg-container">
                 <div class="row">
                     <div class="col-6 text-right">
-                        <h1 class="let-me-help">Let me help showcase your listing with beautiful, professional videos</h1>
+                        <h1 class="let-me-help">Let us help showcase your listing with beautiful, professional videos</h1>
                     </div>
                     <div class="col-6 intro-text-container">
                         <p>Did you know that 73% of sellers are likely to list an agent utilizing video? Only 1% of agents offer video utilizing video as a marketing tool. Let me help you seize the opportunity!</p>
-                        <p>Set yourself apart from the competition with a <strong>professional real estate marketing video</strong> to boldly showcase your property, highlight building features and surrounding local amenities.</p>
+                        <p>Set yourself apart from the competition with a professional real estate marketing video to boldly showcase your property, highlight building features and surrounding local amenities.</p>
                         <p>Our custom real estate videos provide your target audience with a rich and engaging experience that is sure to leave an impression. The final production consists of full motion video that is outputted as web-ready video that can be embedded on any website, sent via email, or shared on social media. </p>
                     </div>
                 </div>
