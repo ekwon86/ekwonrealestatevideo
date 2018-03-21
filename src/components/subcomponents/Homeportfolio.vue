@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-12 text-center what-i-do-container">
                 <h1 class="what-i-do">OUR WORK</h1>
-                <p>Here are some projects we have worked on recently</p>
             </div>
         </div>
         <div class="row landing-portfolio-video-containers">

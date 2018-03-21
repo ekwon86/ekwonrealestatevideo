@@ -37,6 +37,7 @@
                 </div>
             </div>
             <div id="home-rdy-to-talk">
+                <div id="rdy-to-talk-overlay"></div>
                 <div class="container">
                     <Homereadytotalk/>
                 </div>
@@ -90,8 +91,6 @@ export default {
         text-align: justify;
     }
 
-
-
     .of-real-estate-marketing {
         font-size: 5rem;
         color: white;
@@ -122,12 +121,21 @@ export default {
         padding: 100px 0;
     }
 
+    #rdy-to-talk-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.8);
+        width: 100%;
+        height: 100%;
+    }
     #home-rdy-to-talk {
+        position: relative;
         margin-top: 100px;
         height: auto;
-        background: url("../assets/rdytotalk.png");
+        background: url("../assets/pic1.jpg");
         background-attachment: fixed;
-        background-position: center;
+        background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 100px 0;
