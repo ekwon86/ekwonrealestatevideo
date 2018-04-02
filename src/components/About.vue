@@ -11,37 +11,36 @@
                 <div class="col about-us-text-container">
                     <div class="about-us-text-subcontainer absolute-right">
                         <p class="about-headings">What We Do</p>
-                        <p class="about-text">At <strong>EK Productions </strong> we specialize in the production of high-end real estate video marketing. Our videos are an indispensable marketing tool to help real estate agents sell more homes and business owners attract more customers.  We focus on producing stunning visual content that captures attention & engages consumers. We can help you reach a new generation of commercial tenants, vacationers, and homebuyers with a high-end real estate video.</p>
+                        <p class="about-text">At <strong>EK Media </strong> we specialize in the production of high-end real estate video marketing. Our videos are an indispensable marketing tool to help real estate agents sell more homes and business owners attract more customers.  We focus on producing stunning visual content that captures attention & engages consumers. We can help you reach a new generation of commercial tenants, vacationers, and homebuyers with a high-end real estate video.</p>
                     </div>
                 </div>
                 <div class="col about-us-img-container">
                     <img src="../assets/editing.jpg" alt="edit">
+                </div>
+            </div>
+            <!--<div class="row about-us-containers">-->
+                <!--<div class="col about-us-text-container">-->
+                    <!--<div class="about-us-text-subcontainer absolute-right">-->
+                        <!--<p class="about-headings">Affordability Without Sacrificing Quality</p>-->
+                        <!--<p class="about-text">Our productions are guaranteed to grab the attention of your clients and drive results without you needing to spend a fortune for them. From basic photography stills to aerial videos and stills using our drone, our offerings can be packaged in a variety of ways custom-tailored for you and your marketing needs. </p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col about-us-img-container">-->
+                    <!--<img src="../assets/drone.jpeg" alt="edit">-->
 
-                </div>
-            </div>
-            <div class="row about-us-containers">
-                <div class="col about-us-text-container">
-                    <div class="about-us-text-subcontainer absolute-right">
-                        <p class="about-headings">Affordability Without Sacrificing Quality</p>
-                        <p class="about-text">Our productions are guaranteed to grab the attention of your clients and drive results without you needing to spend a fortune for them. Our offerings can be packaged in a variety of ways, custom-tailored for you and your needs. </p>
-                    </div>
-                </div>
-                <div class="col about-us-img-container">
-                    <img src="../assets/drone.jpeg" alt="edit">
-
-                </div>
-            </div>
-            <div class="row about-us-containers">
-                <div class="col about-us-text-container">
-                    <div class="about-us-text-subcontainer absolute-right">
-                        <p class="about-headings">Your Success Is Our Success</p>
-                        <p class="about-text">Your satisfaction is of utmost importance to us. At EK Productions, we want your experience with us to be a smooth, easy process with a quick turnaround time that will undoubtedly capture the attention of potential buyers.</p>
-                    </div>
-                </div>
-                <div class="col about-us-img-container">
-                    <img src="../assets/sold.jpg" alt="sold">
-                </div>
-            </div>
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row about-us-containers">-->
+                <!--<div class="col about-us-text-container">-->
+                    <!--<div class="about-us-text-subcontainer absolute-right">-->
+                        <!--<p class="about-headings">Your Success Is Our Success</p>-->
+                        <!--<p class="about-text">Your satisfaction is of utmost importance to us. At EK Productions, we want your experience with us to be a smooth, easy process with a quick turnaround time that will undoubtedly capture the attention of potential buyers.</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col about-us-img-container">-->
+                    <!--<img src="../assets/sold.jpg" alt="sold">-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
         <div id="rdy-to-talk">
             <div id="rdy-to-talk-overlay"></div>

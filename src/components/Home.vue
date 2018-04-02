@@ -19,8 +19,8 @@
                         <h1 class="let-me-help">Let us help showcase your listing with beautiful, professional videos</h1>
                     </div>
                     <div class="col-6 intro-text-container">
-                        <p>Did you know that 73% of sellers are likely to list an agent utilizing video? Only 1% of agents offer video utilizing video as a marketing tool. Let me help you seize the opportunity!</p>
                         <p>Set yourself apart from the competition with a professional real estate marketing video to boldly showcase your property, highlight building features and surrounding local amenities.</p>
+                        <p>From aerial drone videos to photographic stills we have a number of solutions and packages available to fulfill your marketing needs.</p>
                         <p>Our custom real estate videos provide your target audience with a rich and engaging experience that is sure to leave an impression. The final production consists of full motion video that is outputted as web-ready video that can be embedded on any website, sent via email, or shared on social media. </p>
                     </div>
                 </div>

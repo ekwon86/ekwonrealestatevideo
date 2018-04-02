@@ -11,7 +11,7 @@
                 </div>
                 <div class="services-desc-subcontainers">
                     <h2 class="services-headings">Video Production</h2>
-                    <span>We offer the latest in 4K and HD video production to produce visually stunning marketing and promotional videos. </span>
+                    <span>We offer the latest in 4K and HD video production to produce visually stunning marketing and promotional videos that are guaranteed to stop potential buyers in their tracks.</span>
                 </div>
             </div>
         </div>

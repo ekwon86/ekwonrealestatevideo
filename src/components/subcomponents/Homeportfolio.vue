@@ -8,7 +8,7 @@
         <div class="row landing-portfolio-video-containers">
             <div class="col-6 landing-video-containers">
                 <div class="landing-video">
-                    <iframe src="https://www.youtube.com/embed/0Pg_1A-iVWo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/j92EsnjMrz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-6 landing-video-containers">

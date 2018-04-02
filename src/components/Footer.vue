@@ -24,11 +24,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <span class="copyright-content"><i class="far fa-copyright"></i>&nbsp;2018 EK Productions&nbsp;&nbsp;
-                        <a href="http://www.eugenekwon.com" target="_blank">
-                            <img src="../assets/logo.png" class="footer-logo">
-                        </a>
-                    &nbsp;&nbsp;Designed by Eugene Kwon</span>
+                    <span class="copyright-content"><i class="far fa-copyright"></i>&nbsp;2018 EK Productions</span>
                 </div>
             </div>
         </div>

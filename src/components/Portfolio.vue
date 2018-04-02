@@ -67,6 +67,7 @@ export default {
 </script>
 
 <style scoped>
+
     #portfolio-background {
         background: url("../assets/pic4.jpg");
     }
@@ -77,7 +78,7 @@ export default {
         padding-bottom: 50px;
     }
     .project-containers {
-        height: 300px;
+        height: 100px;
         position: relative;
         margin: 40px 0;
         overflow: hidden;

@@ -5,13 +5,13 @@
                 <div class="col-1 navbar-subcontainers logo-container">
                     <img src="../assets/logo.png" alt="EKLogo" id="eklogo" @click="goHome">
                 </div>
-                <div class="col-3 navbar-subcontainers banner-container">
+                <div class="col-4 navbar-subcontainers banner-container">
                     <div class="vertical-center-content">
-                        <p class="banner-text ek-banner">EK PRODUCTIONS</p>
+                        <p class="banner-text ek-banner">EK REAL ESTATE MEDIA</p>
                         <p class="banner-text bottom-banner">REAL ESTATE VIDEOGRAPHY & PHOTOGRAPHY</p>
                     </div>
                 </div>
-                <div class="col-8 navbar-subcontainers nav-link-container text-right">
+                <div class="col-7 navbar-subcontainers nav-link-container text-right">
                     <div class="vertical-center-content">
                         <router-link to="/" class="nav-links">HOME</router-link>
                         <router-link to="/about" class="nav-links">ABOUT</router-link>
