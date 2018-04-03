@@ -58,6 +58,8 @@ export default {
     }
 
     /*PAGE TEMPLATE ITEMS*/
+    html, body { overflow-x: hidden; }
+
     .overlay {
         width: 100%;
         height: 100%;
@@ -234,6 +236,11 @@ export default {
     .custom-button:hover {
         background-color: #2e2e2e;
         color: white;
+    }
+
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+
     }
 
 </style>

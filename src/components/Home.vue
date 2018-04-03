@@ -161,4 +161,14 @@ export default {
         opacity: 0;
     }
 
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+        .the-future {
+            font-size: 5rem;
+        }
+        .of-real-estate-marketing {
+            font-size: 3rem;
+        }
+    }
+
 </style>

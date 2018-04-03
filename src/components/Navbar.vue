@@ -1,17 +1,17 @@
 <template>
     <div id="top-navbar">
-        <div class="container navbar-container">
+        <div class="container navbar-container" id="large-device-navbar">
             <div class="row" style="height: 100%;">
-                <div class="col-1 navbar-subcontainers logo-container">
+                <div class="col-2 col-lg-1 navbar-subcontainers logo-container">
                     <img src="../assets/logo.png" alt="EKLogo" id="eklogo" @click="goHome">
                 </div>
-                <div class="col-4 navbar-subcontainers banner-container">
+                <div class="col-7 col-lg-4 navbar-subcontainers banner-container">
                     <div class="vertical-center-content">
                         <p class="banner-text ek-banner">EK REAL ESTATE MEDIA</p>
                         <p class="banner-text bottom-banner">REAL ESTATE VIDEOGRAPHY & PHOTOGRAPHY</p>
                     </div>
                 </div>
-                <div class="col-7 navbar-subcontainers nav-link-container text-right">
+                <div class="col-lg-7 navbar-subcontainers nav-link-container text-right">
                     <div class="vertical-center-content">
                         <router-link to="/" class="nav-links">HOME</router-link>
                         <router-link to="/about" class="nav-links">ABOUT</router-link>
@@ -22,6 +22,45 @@
                 </div>
             </div>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mobile-navbar">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/logo.png" width="30" height="30" alt="">
+                EK Real Estate Media
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <router-link to="/">
+                            <a class="nav-link" href="#">Home</a>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/about">
+                            <a class="nav-link" href="#">About</a>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/services">
+                            <a class="nav-link" href="#">Services</a>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/portfolio">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/contact">
+                            <a class="nav-link" href="#">Contact</a>
+                        </router-link>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </template>
 
@@ -43,6 +82,9 @@
                 } else {
                     navbar.style.backgroundColor = 'transparent';
                 }
+            },
+            dismissNavbar() {
+                alert('test');
             }
         },
         created: function() {
@@ -116,5 +158,38 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+    }
+    #mobile-navbar {
+        display: none;
+    }
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+        .navbar-brand {
+            font-family: 'Unica One', cursive;
+            text-transform: uppercase;
+        }
+        .nav-link-container {
+            display: none;
+        }
+        .ek-banner {
+            font-size: 18px;
+        }
+        .bottom-banner {
+            font-size: 12px;
+        }
+        #eklogo {
+            width: 40px;
+            height: 40px;
+        }
+        #top-navbar {
+            height: 60px;
+            padding: 0;
+        }
+        #mobile-navbar {
+            display: flex;
+        }
+        #large-device-navbar {
+            display: none;
+        }
     }
 </style>
