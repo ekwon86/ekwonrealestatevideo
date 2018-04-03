@@ -30,7 +30,7 @@
     }
 
     .learn-more-button {
-        border: 3px solid white;
+        border: 1px solid white;
         display: inline-block;
         margin-top: 25px;
         color: white;
