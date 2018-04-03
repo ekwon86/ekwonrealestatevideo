@@ -47,7 +47,6 @@ export default {
     mounted() {
         this.getCurrentYear();
     }
-
 }
 </script>
 
@@ -55,7 +54,7 @@ export default {
     #footer {
         height: 250px;
         width: 100%;
-        background-color: #2e2e2e;
+        background-color: rgb(46, 46, 46);
         color: white;
     }
     .footer-container {

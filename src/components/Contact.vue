@@ -8,16 +8,12 @@
         </div>
         <div class="container" id="contact-info">
             <div class="row form-group">
-                <div class="col">
-                    <div class="form-group">
+                <div class="col-12 col-lg-6">
+                    <div class="contact-us-container">
                         <p class="contact-us-banner">CONTACT US</p>
-                        <div class="contact-us-subcontainers">
-                            <p><i class="fas contact-us-icons fa-map-marker-alt"></i>&nbsp;&nbsp; Orange County, CA</p>
-                        </div>
-                        <div class="contact-us-subcontainers">
-                            <p class="contact-us-phone"><i class="fas contact-us-icons fa-phone"></i>&nbsp;&nbsp; 714-402-5268</p>
-                            <p><i class="far contact-us-icons fa-envelope"></i>&nbsp;&nbsp; info@ekrealestatemedia.com</p>
-                        </div>
+                        <p><i class="fas contact-us-icons fa-map-marker-alt"></i>&nbsp;&nbsp; Orange County, CA</p>
+                        <p><i class="fas contact-us-icons fa-phone"></i>&nbsp;&nbsp; 714-402-5268</p>
+                        <p><i class="far contact-us-icons fa-envelope"></i>&nbsp;&nbsp; info@ekrealestatemedia.com</p>
                     </div>
                     <div class="form-group">
                         <label for="fullName">Full Name: <span class="required">*</span></label>
@@ -39,22 +35,16 @@
                         <label for="message">Message: <span class="required">*</span></label>
                         <textarea type="text" class="form-control" id="message" rows="5"></textarea>
                     </div>
+                    <div class="send-btn-container">
+                        <button class="btn btn-success" id="desktop-send-btn">Send Message</button>
+                        <button class="btn btn-success btn-block" id="mobile-send-btn">Send Message</button>
+                    </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-lg-6" id="map-container">
                     <div class="col" id="map"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-outline-primary">Send Message</button>
-                </div>
-            </div>
         </div>
-        <!--<div class="container-fluid">-->
-            <!--<div class="row" id="map-container">-->
-                <!--<div class="col" id="map"></div>-->
-            <!--</div>-->
-        <!--</div>-->
     </div>
 </template>
 
@@ -89,6 +79,9 @@
     .required {
         color: red;
     }
+    .contact-us-container {
+        height: auto;
+    }
     #contact-background {
         background: url("../assets/pic5.jpg");
     }
@@ -101,17 +94,8 @@
         border-bottom: 1px solid rgba(0,0,0,0.1);
         text-transform: uppercase;
     }
-    .contact-us-subcontainers {
-        display: inline-block;
-        width: 50%;
-        height: 50px;
-        vertical-align: top;
-    }
     .contact-us-icons {
-        color: #5f5f5f;
-    }
-    .contact-us-phone {
-        margin-bottom: 8px;
+        color: #ff5427;
     }
     #contact-info {
         min-height: 600px;
@@ -120,14 +104,34 @@
         padding-bottom: 50px;
     }
     #map-container {
-        height: 400px;
+        height: 100%;
     }
     #map {
         height: 100%;
-        /*-webkit-filter: grayscale(100%); !* Safari 6.0 - 9.0 *!*/
-        /*filter: grayscale(100%);*/
     }
     textarea {
         resize: none;
+    }
+    #desktop-send-btn {
+        display: block;
+    }
+    #mobile-send-btn {
+        display: none;
+    }
+
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+        #desktop-send-btn {
+            display: none;
+        }
+        #mobile-send-btn {
+            display: block;
+        }
+        .send-btn-container {
+            margin-bottom: 50px;
+        }
+        #map-container {
+            height: 250px;
+        }
     }
 </style>
