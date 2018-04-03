@@ -46,4 +46,16 @@
         background-color: white;
         color: black;
     }
+
+
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+        .rdy-to-talk-banner {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+        }
+        .learn-more-button {
+            font-weight: bold;
+        }
+    }
 </style>

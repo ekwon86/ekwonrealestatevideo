@@ -3,35 +3,53 @@
         <div class="container footer-container">
             <div class="row">
                 <div class="col text-center">
-                    <span>714.402.5268 &nbsp; •&nbsp; &nbsp; <a class="email-link" href="mailto:info@ekrealestateproductions.com">info@ekrealestateproductions.com</a></span>
+                    <span class="contact-info">714.402.5268 &nbsp; •&nbsp; &nbsp; <a class="email-link" href="mailto:info@ekrealestateproductions.com">info@ekrealestateproductions.com</a></span>
                 </div>
             </div>
             <div class="row social-holder">
                 <div class="col-12 text-center">
                     <a href="https://www.instagram.com/mrujin/" class="social-link" target="_blank">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-instagram social-icons"></i>
                     </a>
                     <a href="https://www.facebook.com/gene.kwon.3?ref=bookmarks" class="social-link" target="_blank">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-facebook social-icons"></i>
                     </a>
                     <a href="https://www.youtube.com/user/mrujin" class="social-link" target="_blank">
-                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-youtube social-icons"></i>
                     </a>
                     <a href="https://www.twitter.com" class="social-link" target="_blank">
-                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-twitter social-icons"></i>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <span class="copyright-content"><i class="far fa-copyright"></i>&nbsp;2018 EK Productions</span>
+                    <span class="copyright-content"><i class="far fa-copyright"></i>&nbsp;{{ year }} EK Real Estate Media</span>
                 </div>
             </div>
         </div>
     </div>
 </template>
 
-<script></script>
+<script>
+export default {
+    data() {
+        return {
+            year: ''
+        }
+    },
+    methods: {
+        getCurrentYear() {
+            const currentTime = new Date();
+            this.year = currentTime.getFullYear();
+        }
+    },
+    mounted() {
+        this.getCurrentYear();
+    }
+
+}
+</script>
 
 <style scoped>
     #footer {
@@ -78,5 +96,21 @@
     .footer-logo {
         width: 50px;
         height: 50px;
+    }
+
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+        #footer {
+            height: 175px;
+        }
+        .social-icons  {
+            font-size: 20px;
+        }
+        .social-holder {
+            margin: 10px 0;
+        }
+        .contact-info, .copyright-content {
+            font-size: 12px;
+        }
     }
 </style>
