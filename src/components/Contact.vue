@@ -104,7 +104,7 @@
         padding-bottom: 50px;
     }
     #map-container {
-        height: 100%;
+        height: 700px;
     }
     #map {
         height: 100%;

@@ -222,7 +222,7 @@ export default {
     }
 
     .custom-button {
-        border: 3px solid black;
+        border: 1px solid black;
         display: inline-block;
         color: black;
         background-color: transparent;

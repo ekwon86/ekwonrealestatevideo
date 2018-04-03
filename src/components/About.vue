@@ -6,41 +6,44 @@
                 <h1 class="page-banners">ABOUT US</h1>
             </div>
         </div>
-        <div class="container" id="about-info">
-            <div class="row about-us-containers">
-                <div class="col about-us-text-container">
-                    <div class="about-us-text-subcontainer absolute-right">
-                        <p class="about-headings">What We Do</p>
-                        <p class="about-text">At <strong>EK Media </strong> we specialize in the production of high-end real estate video marketing. Our videos are an indispensable marketing tool to help real estate agents sell more homes and business owners attract more customers.  We focus on producing stunning visual content that captures attention & engages consumers. We can help you reach a new generation of commercial tenants, vacationers, and homebuyers with a high-end real estate video.</p>
+        <div class="container">
+            <div class="row about-containers border-bottom">
+                <div class="col-lg-4 about-us-img-containers">
+                    <img src="../assets/editing.jpg" alt="editing">
+                </div>
+                <div class="col-lg-8 about-us-text-padding">
+                    <div class="about-us-text-containers">
+                        <p class="about-top-heading">01</p>
+                        <p class="about-headings">What We do</p>
+                        <p class="about-text">At <strong>EK Real Estate Media</strong> we specialize in the production of high-end real estate video marketing. Our videos are an indispensable marketing tool to help real estate agents sell more homes and business owners attract more customers.</p>
+                        <p class="about-text">We focus on producing stunning visual content that captures attention & engages consumers. We can help you reach a new generation of commercial tenants, vacationers, and homebuyers with a high-end real estate video.</p>
                     </div>
                 </div>
-                <div class="col about-us-img-container">
-                    <img src="../assets/editing.jpg" alt="edit">
+            </div>
+            <div class="row about-containers border-bottom">
+                <div class="col-lg-4 about-us-img-containers">
+                    <img src="../assets/drone.jpeg" alt="drone">
+                </div>
+                <div class="col-lg-8 about-us-text-padding">
+                    <div class="about-us-text-containers">
+                        <p class="about-top-heading">02</p>
+                        <p class="about-headings">Affordability Without Sacrificing Quality</p>
+                        <p class="about-text">Our productions are guaranteed to grab the attention of your clients and drive results without you needing to spend a fortune for them. From basic photography stills to aerial videos and stills using our drone, our offerings can be packaged in a variety of ways custom-tailored for you and your marketing needs.</p>
+                    </div>
                 </div>
             </div>
-            <!--<div class="row about-us-containers">-->
-                <!--<div class="col about-us-text-container">-->
-                    <!--<div class="about-us-text-subcontainer absolute-right">-->
-                        <!--<p class="about-headings">Affordability Without Sacrificing Quality</p>-->
-                        <!--<p class="about-text">Our productions are guaranteed to grab the attention of your clients and drive results without you needing to spend a fortune for them. From basic photography stills to aerial videos and stills using our drone, our offerings can be packaged in a variety of ways custom-tailored for you and your marketing needs. </p>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col about-us-img-container">-->
-                    <!--<img src="../assets/drone.jpeg" alt="edit">-->
-
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row about-us-containers">-->
-                <!--<div class="col about-us-text-container">-->
-                    <!--<div class="about-us-text-subcontainer absolute-right">-->
-                        <!--<p class="about-headings">Your Success Is Our Success</p>-->
-                        <!--<p class="about-text">Your satisfaction is of utmost importance to us. At EK Productions, we want your experience with us to be a smooth, easy process with a quick turnaround time that will undoubtedly capture the attention of potential buyers.</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col about-us-img-container">-->
-                    <!--<img src="../assets/sold.jpg" alt="sold">-->
-                <!--</div>-->
-            <!--</div>-->
+            <div class="row about-containers">
+                <div class="col-lg-4 about-us-img-containers">
+                    <img src="../assets/sold.jpg" alt="sold">
+                </div>
+                <div class="col-lg-8 about-us-text-padding">
+                    <div class="about-us-text-containers">
+                        <p class="about-top-heading">03</p>
+                        <p class="about-headings">Your Success Is Our Success</p>
+                        <p class="about-text">Your satisfaction is of utmost importance to us. At EK Productions, we want your experience with us to be a smooth, easy process with a quick turnaround time that will undoubtedly capture the attention of potential buyers.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="rdy-to-talk">
             <div id="rdy-to-talk-overlay"></div>
@@ -69,54 +72,59 @@
     #about-background {
         background: url("../assets/pic3.jpg");
     }
-    .about-us-containers {
-        height: 350px;
-        margin-top: 50px;
-        /*border: 1px solid black;*/
+    .about-containers {
+        height: 450px;
+    }
+    .border-bottom {
+        border-bottom: 1px solid black;
     }
     .about-headings {
-        font-weight: bold;
         font-size: 2rem;
-        padding-bottom: 10px;
-        border-bottom: 1px solid rgba(0,0,0,0.5);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
         font-family: 'Oswald', sans-serif;
     }
     .about-text {
         text-align: justify;
         line-height: 1.75em;
+        font-size: 1rem;
     }
-    .about-us-text-container, .about-us-img-container {
-        height: 100%;
+    .about-top-heading {
+        margin: 0;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 5px;
+        font-size: 1rem;
+        color: rgba(0,0,0,0.3);
     }
     .about-us-text-subcontainer {
         padding: 25px 40px;
         position: absolute;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         top: 50%;
         background-color: rgba(255,255,255,1);
         z-index: 9999;
         transform: translateY(-50%);
     }
-
-    .absolute-right {
-        right: -75px;
-    }
-    .absolute-left {
-        left: -75px;
-    }
-
-    .about-us-img-container img {
+    .about-us-img-containers {
         height: 100%;
-        width: 100%;
+        padding: 0;
     }
-    #about-info {
-        min-height:700px;
-        height: auto;
-        padding-top: 25px;
-        padding-right: 0;
-        padding-left: 0;
+    .about-us-text-containers {
+        position: relative;
+        padding-left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
+    .about-us-img-containers img {
+        height: 50%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     .rdy-to-talk-banner {
         text-transform: uppercase;
         font-family: 'Oswald',sans-serif;
@@ -146,7 +154,6 @@
 
     #rdy-to-talk {
         position: relative;
-        margin-top: 100px;
         height: auto;
         background: url("../assets/pic3.jpg");
         background-attachment: fixed;
