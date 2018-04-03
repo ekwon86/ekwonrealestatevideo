@@ -240,7 +240,17 @@ export default {
 
     /*MEDIA QUERIES*/
     @media only screen and (max-width: 600px) {
-
+        .page-banner-containers {
+            text-align: center;
+        }
+        .page-banners {
+            font-size: 4rem;
+        }
+        .custom-button {
+            color: white;
+            background-color: black;
+            font-weight: bold;
+        }
     }
 
 </style>

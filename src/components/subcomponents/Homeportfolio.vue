@@ -1,45 +1,44 @@
 <template>
-    <div>
-        <div class="row">
-            <div class="col-12 text-center what-i-do-container">
-                <h1 class="what-i-do">OUR WORK</h1>
-            </div>
+    <div class="row">
+        <div class="col-12 text-center what-i-do-container">
+            <h1 class="what-i-do">OUR WORK</h1>
         </div>
-        <div class="row landing-portfolio-video-containers">
-            <div class="col-6 landing-video-containers">
+        <div class="landing-portfolio-video-containers col-12 col-lg-6">
+            <div class="landing-video-containers">
                 <div class="landing-video">
                     <iframe src="https://www.youtube.com/embed/j92EsnjMrz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-6 landing-video-containers">
+        </div>
+        <div class="landing-portfolio-video-containers col-12 col-lg-6">
+            <div class="landing-video-containers">
                 <div class="landing-video">
                     <iframe src="https://www.youtube.com/embed/0PQj7-i4PGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        <div class="row landing-portfolio-video-containers">
-            <div class="col-6 landing-video-containers">
+        <div class="landing-portfolio-video-containers col-12 col-lg-6">
+            <div class="landing-video-containers">
                 <div class="landing-video">
                     <iframe src="https://www.youtube.com/embed/HrjfZEhJaQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-6 landing-video-containers">
+        </div>
+        <div class="landing-portfolio-video-containers col-12 col-lg-6 ">
+            <div class="landing-video-containers">
                 <div class="landing-video">
                     <iframe src="https://www.youtube.com/embed/OmmwpactVLc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12" id="interested-in-more-services">
-                <router-link to="/portfolio">
-                    <div class="custom-button" style="">
-                        <span>View Portfolio</span>
-                    </div>
-                </router-link>
-            </div>
+        <div class="col-12" id="interested-in-more-services">
+            <router-link to="/portfolio">
+                <div class="custom-button" style="">
+                    <span>View Portfolio</span>
+                </div>
+            </router-link>
         </div>
     </div>
-
 </template>
 
 
@@ -106,5 +105,15 @@
     .landing-video iframe {
         width: 100%;
         height: 100%;
+    }
+
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+        .what-i-do {
+            font-size: 3rem;
+        }
+        .what-i-do-container {
+            margin-bottom: 0;
+        }
     }
 </style>

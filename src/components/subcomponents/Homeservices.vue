@@ -4,7 +4,7 @@
             <h1 class="what-i-do">What We Do</h1>
             <p>We help real estate agents sell properties with less hassle, in less time, and for higher prices by offering the following services:</p>
         </div>
-        <div class="col-4 text-center services-containers">
+        <div class="col-lg-4 col-12 text-center services-containers">
             <div>
                 <div class="services-subcontainers video-container">
                     <img src="../../assets/video.png" class="services-icons" alt="video">
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 text-center  services-containers">
+        <div class="col-lg-4 col-12 text-center  services-containers">
             <div>
                 <div class="services-subcontainers drone-container">
                     <img src="../../assets/drone.png" class="services-icons"  alt="drone">
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 text-center  services-containers">
+        <div class="col-lg-4 col-12 text-center  services-containers">
             <div class="services-subcontainers photo-container">
                 <img src="../../assets/dslr.png" class="services-icons" alt="photo">
             </div>
@@ -103,5 +103,23 @@
         font-weight: bold;
         margin-bottom: 25px;
         font-size: 4rem;
+    }
+
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+        .what-i-do {
+            font-size: 3rem;
+        }
+        .services-subcontainers {
+            height: 125px;
+            width: 125px;
+        }
+        .services-icons {
+            width: 65px;
+            height: 65px;
+        }
+        #interested-in-more-services {
+            margin-top: 15px;
+        }
     }
 </style>

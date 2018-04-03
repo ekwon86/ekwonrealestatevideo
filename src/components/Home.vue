@@ -15,32 +15,32 @@
             <!-- INTRO STATEMENT -->
             <div class="container" id="welcome-msg-container">
                 <div class="row">
-                    <div class="col-6 text-right">
+                    <div class="col-lg-6 col-12 let-us-help-showcase">
                         <h1 class="let-me-help">Let us help showcase your listing with beautiful, professional videos</h1>
                     </div>
-                    <div class="col-6 intro-text-container">
+                    <div class="col-lg-6 col-12 intro-text-container">
                         <p>Set yourself apart from the competition with a professional real estate marketing video to boldly showcase your property, highlight building features and surrounding local amenities.</p>
                         <p>From aerial drone videos to photographic stills we have a number of solutions and packages available to fulfill your marketing needs.</p>
                         <p>Our custom real estate videos provide your target audience with a rich and engaging experience that is sure to leave an impression. The final production consists of full motion video that is outputted as web-ready video that can be embedded on any website, sent via email, or shared on social media. </p>
                     </div>
                 </div>
             </div>
-            <!-- TYPES OF SERVICES -->
-            <div id="home-services">
-                <div class="container home-services-subcontainer">
-                    <Homeservices/>
-                </div>
+        </div>
+        <!-- TYPES OF SERVICES -->
+        <div id="home-services">
+            <div class="container home-services-subcontainer">
+                <Homeservices/>
             </div>
-            <div id="home-portfolio">
-                <div class="container">
-                    <Homeportfolio/>
-                </div>
+        </div>
+        <div id="home-portfolio">
+            <div class="container">
+                <Homeportfolio/>
             </div>
-            <div id="home-rdy-to-talk">
-                <div id="rdy-to-talk-overlay"></div>
-                <div class="container">
-                    <Homereadytotalk/>
-                </div>
+        </div>
+        <div id="home-rdy-to-talk">
+            <div id="rdy-to-talk-overlay"></div>
+            <div class="container">
+                <Homereadytotalk/>
             </div>
         </div>
     </div>
@@ -86,7 +86,9 @@ export default {
         padding-bottom: 15px;
         font-family: 'Oswald', sans-serif;
     }
-
+    .let-us-help-showcase {
+        text-align: right;
+    }
     .intro-text-container {
         text-align: justify;
     }
@@ -102,7 +104,7 @@ export default {
     }
     #landing-info {
         height: auto;
-        padding-top: 100px;
+        padding: 100px 0;
     }
     .let-me-help {
         font-family: 'Oswald', sans-serif;
@@ -111,14 +113,13 @@ export default {
     }
 
     #home-services {
-        margin-top: 100px;
+        padding: 100px 0;
         height: auto;
         background: url("../assets/servicesbg.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 100px 0;
     }
 
     #rdy-to-talk-overlay {
@@ -131,7 +132,6 @@ export default {
     }
     #home-rdy-to-talk {
         position: relative;
-        margin-top: 100px;
         height: auto;
         background: url("../assets/pic1.jpg");
         background-attachment: fixed;
@@ -143,7 +143,7 @@ export default {
 
     #home-portfolio {
         height: auto;
-        margin-top: 100px;
+        padding: 100px 0;
     }
     .home-services-subcontainer {
         height: 100%;
@@ -165,9 +165,21 @@ export default {
     @media only screen and (max-width: 600px) {
         .the-future {
             font-size: 5rem;
+            padding-bottom: 5px;
+            border-bottom: none;
         }
         .of-real-estate-marketing {
-            font-size: 3rem;
+            font-size: 2rem;
+        }
+        .let-us-help-showcase, .intro-text-container {
+            text-align: center;
+        }
+        .let-us-help-showcase h1{
+            font-size: 1.75rem;
+            margin-bottom: 25px;
+        }
+        #landing-info, #home-services, #home-portfolio, #home-rdy-to-talk {
+            padding: 60px 0;
         }
     }
 

@@ -27,7 +27,7 @@
                 <img src="../assets/logo.png" width="30" height="30" alt="">
                 EK Real Estate Media
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbar-btn">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -35,27 +35,27 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <router-link to="/">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#" @click="dismissNavbar">Home</a>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/about">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#" @click="dismissNavbar">About</a>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/services">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#" @click="dismissNavbar">Services</a>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/portfolio">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#" @click="dismissNavbar">Portfolio</a>
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/contact">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#" @click="dismissNavbar">Contact</a>
                         </router-link>
                     </li>
                 </ul>
@@ -84,7 +84,8 @@
                 }
             },
             dismissNavbar() {
-                alert('test');
+                let navbtn = document.getElementById('navbar-btn');
+                navbtn.click();
             }
         },
         created: function() {
