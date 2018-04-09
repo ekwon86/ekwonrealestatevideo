@@ -163,7 +163,10 @@
     #mobile-navbar {
         display: none;
     }
-    /*MEDIA QUERIES*/
+
+    /***** MEDIA QUERIES *****/
+
+    /*PORTRAIT*/
     @media only screen and (max-width: 600px) {
         .navbar-brand {
             font-family: 'Unica One', cursive;
@@ -193,4 +196,7 @@
             display: none;
         }
     }
+
+    /*LANDSCAPE*/
+    
 </style>

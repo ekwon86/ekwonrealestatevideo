@@ -164,7 +164,7 @@ export default {
     /*MEDIA QUERIES*/
     @media only screen and (max-width: 600px) {
         .the-future {
-            font-size: 5rem;
+            font-size: 4rem;
             padding-bottom: 5px;
             border-bottom: none;
         }
@@ -175,7 +175,7 @@ export default {
             text-align: center;
         }
         .let-us-help-showcase h1{
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             margin-bottom: 25px;
         }
         #landing-info, #home-services, #home-portfolio, #home-rdy-to-talk {

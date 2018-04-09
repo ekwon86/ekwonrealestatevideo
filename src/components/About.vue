@@ -8,10 +8,10 @@
         </div>
         <div class="container">
             <div class="row about-containers border-bottom">
-                <div class="col-lg-4 about-us-img-containers">
+                <div class="col-12 col-lg-4 about-us-img-containers">
                     <img src="../assets/editing.jpg" alt="editing">
                 </div>
-                <div class="col-lg-8 about-us-text-padding">
+                <div class="col-12 col-lg-8 about-us-text-padding">
                     <div class="about-us-text-containers">
                         <p class="about-top-heading">01</p>
                         <p class="about-headings">What We do</p>
@@ -21,10 +21,10 @@
                 </div>
             </div>
             <div class="row about-containers border-bottom">
-                <div class="col-lg-4 about-us-img-containers">
+                <div class="col-12 col-lg-4 about-us-img-containers">
                     <img src="../assets/drone.jpeg" alt="drone">
                 </div>
-                <div class="col-lg-8 about-us-text-padding">
+                <div class="col-12 col-lg-8 about-us-text-padding">
                     <div class="about-us-text-containers">
                         <p class="about-top-heading">02</p>
                         <p class="about-headings">Affordability Without Sacrificing Quality</p>
@@ -33,10 +33,10 @@
                 </div>
             </div>
             <div class="row about-containers">
-                <div class="col-lg-4 about-us-img-containers">
+                <div class="col-12 col-lg-4 about-us-img-containers">
                     <img src="../assets/sold.jpg" alt="sold">
                 </div>
-                <div class="col-lg-8 about-us-text-padding">
+                <div class="col-12 col-lg-8 about-us-text-padding">
                     <div class="about-us-text-containers">
                         <p class="about-top-heading">03</p>
                         <p class="about-headings">Your Success Is Our Success</p>
@@ -135,7 +135,7 @@
     }
 
     .learn-more-button {
-        border: 3px solid white;
+        border: 1px solid white;
         display: inline-block;
         margin-top: 25px;
         color: white;
@@ -169,5 +169,36 @@
         position: absolute;
         background-color: rgba(0,0,0,0.8);
         top: 0;
+    }
+
+    /*MEDIA QUERIES*/
+    @media only screen and (max-width: 600px) {
+        .about-containers {
+            height: auto;
+            padding: 75px 0;
+        }
+        .about-us-img-containers {
+            padding: 15px;
+            height: 80%;
+        }
+        .about-top-heading {
+            font-size: 2.5rem;
+        }
+        .about-us-text-containers {
+            padding: 0;
+        }
+        .about-us-img-containers img {
+            transform:translate(0,0);
+        }
+        .border-bottom {
+            border-bottom: none !important;
+        }
+        .rdy-to-talk-banner {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+        }
+        .learn-more-button {
+            font-weight: bold;
+        }
     }
 </style>
