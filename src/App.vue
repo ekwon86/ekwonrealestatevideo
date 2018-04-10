@@ -239,7 +239,11 @@ export default {
     }
 
     /*MEDIA QUERIES*/
-    @media only screen and (max-width: 600px) {
+
+    /* MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         .page-banner-containers {
             text-align: center;
         }
@@ -249,8 +253,19 @@ export default {
         .custom-button {
             color: white;
             background-color: black;
-            font-weight: bold;
         }
     }
 
+
+    /*MOBILE - LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+        .page-banner-containers {
+            text-align: center;
+        }
+        .page-banners {
+            font-size: 5rem;
+        }
+    }
 </style>

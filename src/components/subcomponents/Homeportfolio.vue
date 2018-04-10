@@ -107,13 +107,24 @@
         height: 100%;
     }
 
-    /*MEDIA QUERIES*/
-    @media only screen and (max-width: 600px) {
+    /***** MEDIA QUERIES *****/
+
+    /* MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         .what-i-do {
             font-size: 3rem;
         }
         .what-i-do-container {
             margin-bottom: 0;
         }
+    }
+
+    /*MOBILE - LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+
     }
 </style>

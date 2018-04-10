@@ -47,9 +47,12 @@
         color: black;
     }
 
+    /***** MEDIA QUERIES *****/
 
-    /*MEDIA QUERIES*/
-    @media only screen and (max-width: 600px) {
+    /* MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         .rdy-to-talk-banner {
             font-size: 1.75rem;
             margin-bottom: 10px;
@@ -57,5 +60,12 @@
         .learn-more-button {
             font-weight: bold;
         }
+    }
+
+    /*MOBILE - LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+
     }
 </style>

@@ -119,8 +119,12 @@
         display: none;
     }
 
-    /*MEDIA QUERIES*/
-    @media only screen and (max-width: 600px) {
+    /***** MEDIA QUERIES *****/
+
+    /* MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         #desktop-send-btn {
             display: none;
         }
@@ -133,5 +137,12 @@
         #map-container {
             height: 250px;
         }
+    }
+
+    /*LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+
     }
 </style>

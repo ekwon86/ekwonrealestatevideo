@@ -6,40 +6,37 @@
                 <h1 class="page-banners">ABOUT US</h1>
             </div>
         </div>
-        <div class="container">
-            <div class="row about-containers border-bottom">
-                <div class="col-12 col-lg-4 about-us-img-containers">
-                    <img src="../assets/editing.jpg" alt="editing">
+        <div class="container about-container">
+            <div class="row about-rows">
+                <div class="col-lg-4 text-right about-heading-containers addtl-padding">
+                    <p class="about-top-heading">01</p>
+                    <p class="about-headings">What We do</p>
                 </div>
-                <div class="col-12 col-lg-8 about-us-text-padding">
+                <div class="col-12 col-lg-8 addtl-padding">
                     <div class="about-us-text-containers">
-                        <p class="about-top-heading">01</p>
-                        <p class="about-headings">What We do</p>
                         <p class="about-text">At <strong>EK Real Estate Media</strong> we specialize in the production of high-end real estate video marketing. Our videos are an indispensable marketing tool to help real estate agents sell more homes and business owners attract more customers.</p>
                         <p class="about-text">We focus on producing stunning visual content that captures attention & engages consumers. We can help you reach a new generation of commercial tenants, vacationers, and homebuyers with a high-end real estate video.</p>
                     </div>
                 </div>
             </div>
-            <div class="row about-containers border-bottom">
-                <div class="col-12 col-lg-4 about-us-img-containers">
-                    <img src="../assets/drone.jpeg" alt="drone">
+            <div class="row about-rows">
+                <div class="col-lg-4 text-right about-heading-containers addtl-padding">
+                    <p class="about-top-heading">02</p>
+                    <p class="about-headings">Affordability Without Sacrificing Quality</p>
                 </div>
-                <div class="col-12 col-lg-8 about-us-text-padding">
+                <div class="col-12 col-lg-8 addtl-padding">
                     <div class="about-us-text-containers">
-                        <p class="about-top-heading">02</p>
-                        <p class="about-headings">Affordability Without Sacrificing Quality</p>
                         <p class="about-text">Our productions are guaranteed to grab the attention of your clients and drive results without you needing to spend a fortune for them. From basic photography stills to aerial videos and stills using our drone, our offerings can be packaged in a variety of ways custom-tailored for you and your marketing needs.</p>
                     </div>
                 </div>
             </div>
-            <div class="row about-containers">
-                <div class="col-12 col-lg-4 about-us-img-containers">
-                    <img src="../assets/sold.jpg" alt="sold">
+            <div class="row about-rows">
+                <div class="col-lg-4 text-right about-heading-containers addtl-padding">
+                    <p class="about-top-heading">03</p>
+                    <p class="about-headings">Your Success Is Our Success</p>
                 </div>
-                <div class="col-12 col-lg-8 about-us-text-padding">
+                <div class="col-12 col-lg-8 addtl-padding">
                     <div class="about-us-text-containers">
-                        <p class="about-top-heading">03</p>
-                        <p class="about-headings">Your Success Is Our Success</p>
                         <p class="about-text">Your satisfaction is of utmost importance to us. At EK Productions, we want your experience with us to be a smooth, easy process with a quick turnaround time that will undoubtedly capture the attention of potential buyers.</p>
                     </div>
                 </div>
@@ -72,18 +69,20 @@
     #about-background {
         background: url("../assets/pic3.jpg");
     }
-    .about-containers {
-        height: 450px;
+    .about-heading-containers {
+        border-right: 1px solid rgba(0,0,0,0.1);
     }
-    .border-bottom {
-        border-bottom: 1px solid black;
+    .about-container {
+        padding: 100px 0;
+    }
+    .addtl-padding {
+        padding: 25px;
     }
     .about-headings {
         font-size: 2rem;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 30px;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
         font-family: 'Oswald', sans-serif;
     }
     .about-text {
@@ -109,12 +108,6 @@
     .about-us-img-containers {
         height: 100%;
         padding: 0;
-    }
-    .about-us-text-containers {
-        position: relative;
-        padding-left: 25px;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     .about-us-img-containers img {
@@ -171,8 +164,11 @@
         top: 0;
     }
 
-    /*MEDIA QUERIES*/
-    @media only screen and (max-width: 600px) {
+    /***** MEDIA QUERIES *****/
+    /*MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         .about-containers {
             height: auto;
             padding: 75px 0;
@@ -200,5 +196,42 @@
         .learn-more-button {
             font-weight: bold;
         }
+    }
+
+    /*MOBILE - LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+        .about-containers {
+            height: auto;
+            padding: 75px 0;
+        }
+        .about-us-img-containers {
+            padding: 15px;
+            height: 80%;
+        }
+        .about-top-heading {
+            font-size: 2.5rem;
+        }
+        .about-us-text-containers {
+            padding: 0;
+        }
+        .about-us-img-containers img {
+            transform:translate(0,0);
+        }
+        .border-bottom {
+            border-bottom: none !important;
+        }
+        .rdy-to-talk-banner {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+        }
+        .learn-more-button {
+            font-weight: bold;
+        }
+        #about-background {
+            height: 90vh;
+        }
+
     }
 </style>

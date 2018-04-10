@@ -166,8 +166,10 @@
 
     /***** MEDIA QUERIES *****/
 
-    /*PORTRAIT*/
-    @media only screen and (max-width: 600px) {
+    /*MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         .navbar-brand {
             font-family: 'Unica One', cursive;
             text-transform: uppercase;
@@ -197,6 +199,29 @@
         }
     }
 
-    /*LANDSCAPE*/
-    
+    /*MOBILE - LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+        #large-device-navbar, .nav-link-container {
+            display: none;
+        }
+
+        #mobile-navbar {
+            display: flex;
+        }
+
+        #eklogo {
+            width: 40px;
+            height: 40px;
+        }
+        #eklogo {
+            width: 40px;
+            height: 40px;
+        }
+        #top-navbar {
+            height: 60px;
+            padding: 0;
+        }
+    }
 </style>

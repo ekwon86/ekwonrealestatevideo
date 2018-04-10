@@ -105,8 +105,12 @@
         font-size: 4rem;
     }
 
-    /*MEDIA QUERIES*/
-    @media only screen and (max-width: 600px) {
+    /***** MEDIA QUERIES *****/
+
+    /* MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         .what-i-do {
             font-size: 3rem;
         }
@@ -117,6 +121,26 @@
         .services-icons {
             width: 65px;
             height: 65px;
+        }
+        #interested-in-more-services {
+            margin-top: 15px;
+        }
+    }
+
+    /*LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+        .what-i-do {
+            font-size: 3rem;
+        }
+        .services-subcontainers {
+            height: 160px;
+            width: 160px;
+        }
+        .services-icons {
+            width: 85px;
+            height: 85px;
         }
         #interested-in-more-services {
             margin-top: 15px;

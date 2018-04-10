@@ -97,8 +97,12 @@ export default {
         height: 50px;
     }
 
-    /*MEDIA QUERIES*/
-    @media only screen and (max-width: 600px) {
+    /***** MEDIA QUERIES *****/
+
+    /*PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         #footer {
             height: 175px;
         }
@@ -111,5 +115,13 @@ export default {
         .contact-info, .copyright-content {
             font-size: 12px;
         }
+    }
+
+
+    /*MOBILE - LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+
     }
 </style>

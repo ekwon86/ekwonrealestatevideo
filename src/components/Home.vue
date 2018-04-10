@@ -2,7 +2,7 @@
     <div id="home">
         <div id="landing-background" class="page-landing-backgrounds">
             <div class="overlay"></div>
-                <div class="container page-banner-containers" id="home-banner" >
+                <div class="container page-banner-containers" id="home-banner">
                     <transition name="main-banner">
                         <div v-if="showHomeBanner">
                             <h1 class="the-future" >The <span class="future">Future</span></h1>
@@ -161,8 +161,12 @@ export default {
         opacity: 0;
     }
 
-    /*MEDIA QUERIES*/
-    @media only screen and (max-width: 600px) {
+    /***** MEDIA QUERIES *****/
+
+    /* MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
         .the-future {
             font-size: 4rem;
             padding-bottom: 5px;
@@ -183,4 +187,35 @@ export default {
         }
     }
 
+    /*MOBILE - LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+        #landing-background {
+            height: 90vh;
+        }
+        .the-future {
+            font-size: 5.5rem;
+            padding-bottom: 5px;
+            border-bottom: none;
+        }
+        .of-real-estate-marketing {
+            font-size: 2.5rem;
+        }
+        #home-banner {
+            text-align: center;
+        }
+
+        .let-us-help-showcase, .intro-text-container {
+            text-align: center;
+        }
+        .let-us-help-showcase h1{
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        #landing-info {
+            padding: 50px 0;
+        }
+    }
 </style>

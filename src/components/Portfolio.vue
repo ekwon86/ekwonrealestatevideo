@@ -109,4 +109,22 @@ export default {
         color: white;
         text-transform: uppercase;
     }
+
+
+    /***** MEDIA QUERIES *****/
+
+    /* MOBILE - PORTRAIT*/
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px){
+
+    }
+
+
+    /*MOBILE - LANDSCAPE*/
+    @media only screen
+    and (min-device-width: 481px)
+    and (max-device-width: 825px) {
+
+    }
 </style>
